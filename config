@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+	hideDotFiles = dotGitOnly
+[gui]
+	wmstate = normal
+	geometry = 1103x555+174+16 212 251

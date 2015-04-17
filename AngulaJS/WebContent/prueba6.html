@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="myCtrl" >
+		Nombre: <input type="text" ng-model="nombre" />
+		Apellido: <input type="text" ng-model="apellido" />
+		{{ fullName() | uppercase }}
+		{{ precio * cantidad | currency }}
+	</div>
+	<script type="text/javascript">
+		var app = angular.module('myApp', []);
+		app.controller('myCtrl', function($scope){
+			$scope.nombre ="Pablo";
+			$scope.apellido="Gennoni";
+			$scope.precio = 2;
+			$scope.cantidad = 3;
+			$scope.fullName = function(){
+				return $scope.nombre + " " + $scope.apellido;
+			}
+		});
+	</script>
+</body>
+</html>

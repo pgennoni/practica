@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="" ng-init="name='Pablo'">
+		<p>nombre:</p><input type="text" value="{{name}}"/><p ng-bind="name"></p>
+		<p>prueba con expresiones: {{ 22 * 33}}</p>
+	</div>
+</body>
+</html>

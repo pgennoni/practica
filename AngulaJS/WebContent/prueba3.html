@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body>	
+	<div ng-app="myApp" ng-controller="myCtrl">
+		Nombre:<input type="text" ng-model="name" />
+		Apelldo:<input type="text" ng-model="apellido" />
+		<br />
+		Nombre completo: {{ name + " " + apellido }}
+	</div>
+	<script>
+		var app = angular.module('myApp',[]);
+		app.controller('myCtrl', function($scope){
+			$scope.name='Pablo';
+			$scope.apellido='Gennoni';
+		});
+	</script>
+</body>
+</html>
